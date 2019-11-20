@@ -1,0 +1,20 @@
+<div class="file-drop"
+     fxLayout="column"
+     fxLayoutAlign="center center"
+     (click)="triggerFileInput(fileInput)"
+     (drop)="onDrop($event)"
+     (dragleave)="preventDefault($event)"
+     (dragenter)="preventDefault($event)"
+     (dragover)="preventDefault($event)">
+
+    <input #fileInput type="file" hidden accept="{{allowedExtensions.join()}}" (change)="updateFile($event)">
+
+    <i class="material-icons upload">move_to_inbox</i>
+
+    <div class="text"
+         fxLayout="column"
+         fxLayoutAlign="center center">
+      <div class="h1">Drag and drop here pdf you want to upload</div>
+      <div class="h2">You can also <span class="clickable">browse from your computer</span></div>
+    </div>
+</div>

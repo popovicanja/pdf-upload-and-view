@@ -1,0 +1,50 @@
+.content {
+  height: 100%;
+  width: 100%;
+
+  app-file-drop {
+    height: 100%;
+    width: 100%;
+  }
+  .selected-file {
+    position: relative;
+
+    .file-name {
+      color: #3b3b3b;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      line-height: 28px;
+    }
+
+    i.clear {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 18px;
+
+      &:hover {
+        color: dimgray;
+      }
+    }
+
+    i.file {
+      font-size: 80px;
+      color: gray;
+    }
+  }
+
+  .preview {
+    margin-top: 16px;
+    width: 200px;
+    background: #55af7c;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    &:hover {
+      background: #65ca8b;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}

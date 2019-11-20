@@ -1,0 +1,10 @@
+<div class="container"
+     (keydown.esc)="close.emit()">
+  <div class="form-modal-title" fxLayoutAlign="space-between center">
+    <span>{{data?.title}}</span>
+    <i class="material-icons close" (click)="close.emit()">clear</i>
+  </div>
+  <div class="file">
+    <iframe [src]="fileUrl" class="frame"></iframe>
+  </div>
+</div>

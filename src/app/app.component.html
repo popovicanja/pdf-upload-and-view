@@ -1,0 +1,13 @@
+<div class="content" fxLayout="column" fxLayoutAlign="center center">
+
+    <app-file-drop *ngIf="!file" (fileUpdated)="updateFile($event)"></app-file-drop>
+
+    <div class="selected-file" *ngIf="file" fxLayout="column" fxLayoutAlign="center center">
+      <i class="material-icons clear" (click)="removeFile($event)">close</i>
+      <i class="material-icons file">insert_drive_file</i>
+      <span class="file-name">{{file.name}}</span>
+    </div>
+
+    <button mat-raised-button *ngIf="file" class="preview" (click)="previewFile(file)">Preview</button>
+</div>
+

@@ -1,0 +1,23 @@
+.container {
+  overflow: hidden;
+}
+
+.form-modal-title {
+  padding: 12px 24px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+
+  i.close {
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+.frame {
+  width: 100%;
+  height: 88%;
+  zoom: 0.75;
+}
+.file {
+  height: 100vh;
+}
